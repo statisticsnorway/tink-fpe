@@ -4,14 +4,6 @@ Format-Preserving Encryption support for Google Tink.
 
 Format-Preserving Encryption (FPE) is a type of encryption that encrypts data in a way that preserves the format of the original plaintext. This means that after encryption, the encrypted data retains the same format as the original plaintext, such as a specific length or character set.
 
-# Why Tink?
-
-Google Tink is an open-source cryptographic library developed by Google. It provides a simple and secure way for developers to use cryptographic APIs for common cryptographic operations, such as encryption/decryption, signing/verifying signatures, and key management.
-
-Tink aims to make it easier for developers to use cryptography correctly, by providing a safe and efficient implementation of cryptographic primitives. Tink also provides a secure way to handle cryptographic keys, which is crucial for ensuring the security of encrypted data.
-
-Google Tink provides support for many types of cryptographic operations. However, it does not support Format-Preserving Encryption.
-
 ## Features
 
 - _Tink FPE_ implements a [Primitive](https://developers.google.com/tink/glossary) that extends the Google Tink framework with support for Format-Preserving Encryption (FPE).
@@ -19,6 +11,15 @@ Google Tink provides support for many types of cryptographic operations. However
 - The implementation of the underlying algorithm is built on top of the excellent [Mysto FPE](https://github.com/mysto/python-fpe) library.
 - Tink FPE is currently available for Python and Java.
 - Regarding sensitivity for alphabet, FPE is designed to work with a specific alphabet, which is typically defined in the encryption algorithm. If the plaintext data contains characters that are not part of the defined alphabet, Tink FPE supports different _strategies_ for dealing with the data or substitute the characters with ones that are part of the alphabet.
+
+## Why Tink?
+
+Google Tink is an open-source cryptographic library developed by Google. It provides a simple and secure way for developers to use cryptographic APIs for common cryptographic operations, such as encryption/decryption, signing/verifying signatures, and key management.
+
+Tink aims to make it easier for developers to use cryptography correctly, by providing a safe and efficient implementation of cryptographic primitives. Tink also provides a secure way to handle cryptographic keys, which is crucial for ensuring the security of encrypted data.
+
+Google Tink provides support for many types of cryptographic operations. However, it does not support Format-Preserving Encryption.
+
 
 ## Getting started
 
