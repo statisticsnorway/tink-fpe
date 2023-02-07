@@ -27,7 +27,7 @@ This repository does not contain code itself. Instead, it provides scripts that 
 
 See and use `Make` to get started with common tasks:
 
-```sh
+```
 $ make
 
 doctor                         Sanity check of required tools and environment settings required for development
