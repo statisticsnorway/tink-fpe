@@ -27,7 +27,9 @@ This repository does not contain code itself. Instead, it provides scripts that 
 
 See and use `Make` to get started with common tasks:
 
-```Makefile
+```sh
+$ make
+
 doctor                         Sanity check of required tools and environment settings required for development
 update-all                     Clone or pull all changes from associated repos
 status-all                     Show a brief summary of changes to local repos
