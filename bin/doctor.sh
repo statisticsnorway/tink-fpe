@@ -6,6 +6,7 @@ source "$(dirname "$0")/_support-functions.sh"
 
 function validate_local_env {
     validate_silently "make --version" "make is not installed" || return 1
+    validate_silently "java -version" "java is not installed. Tip: use SDKMAN (https://sdkman.io/), like so: sdk install java 17.0.1-open" || return 1
     validate_silently "mvn --version" "Maven is not installed" || return 1
     validate_silently "pipx --version" "Pipx is not installed" || return 1
 
